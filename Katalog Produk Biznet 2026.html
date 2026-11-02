@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Katalog Produk Biznet 2026</title>
+<style>
+:root{--bg:#f6f7fb;--surface:#fff;--ink:#14161f;--muted:#5b6175;--line:#e3e6ef;--accent:#0b6bcb;--accent-2:#00a88f;--tag:#eaf2fc;--tag-ink:#0b4f96;--warn:#fff4df;--warn-ink:#7a4b00;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1117;--surface:#171a24;--ink:#eef0f6;--muted:#9aa1b5;--line:#262b3a;--accent:#5aa8ff;--accent-2:#34d1b5;--tag:#1d2a3d;--tag-ink:#9cc9ff;--warn:#2c2413;--warn-ink:#f2c77a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1117;--surface:#171a24;--ink:#eef0f6;--muted:#9aa1b5;--line:#262b3a;--accent:#5aa8ff;--accent-2:#34d1b5;--tag:#1d2a3d;--tag-ink:#9cc9ff;--warn:#2c2413;--warn-ink:#f2c77a;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-top:env(safe-area-inset-top,0px)}
+a{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.hero{background:linear-gradient(135deg,#0b3d78,#0b6bcb 55%,#00a88f);color:#fff;padding:56px 0 48px}
+.hero .kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;opacity:.85;font-weight:600}
+.hero h1{font-size:40px;line-height:1.15;margin:8px 0 12px;font-weight:800}
+.hero p{max-width:680px;margin:0;opacity:.92}
+.hero .stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.stat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:12px 18px;min-width:150px}
+.stat b{display:block;font-size:22px}
+.stat span{font-size:12px;opacity:.9}
+nav.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+nav.top a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;white-space:nowrap}
+nav.top a:hover{background:var(--tag);color:var(--tag-ink)}
+section{padding:44px 0 8px}
+h2{font-size:26px;margin:0 0 6px}
+h3{font-size:18px;margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 22px;max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column}
+.card .seg{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-2)}
+.card p{margin:6px 0 12px;color:var(--muted);font-size:14px}
+.card ul{margin:0;padding-left:18px;font-size:14px}
+.card li{margin:3px 0}
+.price{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line);font-size:14px}
+.price b{color:var(--ink);font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.chip{background:var(--tag);color:var(--tag-ink);font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px}
+.note{background:var(--warn);color:var(--warn-ink);border-radius:12px;padding:14px 18px;font-size:14px;margin:18px 0 0}
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px;display:block;overflow-x:auto}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:var(--tag);color:var(--tag-ink);font-weight:700}
+tr:last-child td{border-bottom:0}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.tbl-wrap{margin:12px 0 4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:720px){.two{grid-template-columns:1fr}.hero h1{font-size:30px}}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.box h3{margin-bottom:8px}
+.box ul{margin:0;padding-left:18px}
+.box li{margin:4px 0}
+.do{border-top:4px solid var(--accent-2)}
+.dont{border-top:4px solid #d64545}
+footer{margin-top:48px;border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:13px}
+.conf{display:inline-block;margin-bottom:10px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Biznet Training Department &middot; PROD 101</div>
+    <h1>Katalog Produk Biznet 2026</h1>
+    <p>Rangkuman product knowledge untuk tim sales dan support: layanan internet, WiFi, Data Center, dan Internet Exchange untuk segmen Enterprise, UKM, dan Residensial.</p>
+    <div class="stats">
+      <div class="stat"><b>80 Mbps - 10 Gbps</b><span>Rentang layanan Enterprise</span></div>
+      <div class="stat"><b>99,8%</b><span>SLA Dedicated &amp; Datacomm</span></div>
+      <div class="stat"><b>7 lokasi</b><span>Node Biznet Internet Exchange</span></div>
+      <div class="stat"><b>#5</b><span>Peringkat IXP di Indonesia</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="top">
+  <div class="wrap">
+    <a href="#fundamental">Fundamental</a>
+    <a href="#enterprise">Enterprise</a>
+    <a href="#ukm">UKM</a>
+    <a href="#residensial">Residensial</a>
+    <a href="#datacenter">Data Center</a>
+    <a href="#etika">Panduan Etika</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="fundamental">
+  <span class="conf">Confidential Documentation</span>
+  <h2>Konsep Dasar Internet</h2>
+  <p class="lead">Istilah yang perlu dipahami sebelum menjelaskan produk ke pelanggan.</p>
+  <div class="two">
+    <div class="box">
+      <h3>Bandwidth vs Speed</h3>
+      <ul>
+        <li><b>Bandwidth</b> adalah kapasitas: banyaknya data yang bisa dikirim dalam satu rentang waktu.</li>
+        <li><b>Speed</b> adalah kecepatan transfer, dipengaruhi perangkat, jarak, server, dan latency.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Dedicated 1:1 vs Up To</h3>
+      <ul>
+        <li><b>1:1 (Dedicated):</b> bandwidth penuh dan khusus untuk satu pelanggan. Tidak turun saat trafik padat.</li>
+        <li><b>Up To (Shared):</b> dibagi dengan pelanggan lain di satu area. Bisa turun saat trafik padat.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Kuota Internet</h3>
+      <p style="margin:0 0 6px">Setelah kuota habis, pelanggan tetap bisa mengakses internet dengan bandwidth over-kuota.</p>
+      <ul><li>Contoh: Home Internet 1D (300 Mbps), kuota 4.000 GB, over-kuota 15 Mbps untuk browsing, streaming SD-HD, dan game online.</li></ul>
+    </div>
+    <div class="box">
+      <h3>Jenis IP Address</h3>
+      <ul>
+        <li><b>Static:</b> IP tetap, untuk server dan interkoneksi.</li>
+        <li><b>Dynamic:</b> IP berubah dalam bentuk range, dibagi otomatis.</li>
+        <li><b>Public</b> terhubung langsung ke internet. <b>Private</b> perlu NAT.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="note"><b>SLA 99,8%</b> berarti toleransi downtime sekitar 86,4 menit per 30 hari.</div>
+</section>
+
+<section id="enterprise">
+  <h2>Produk Enterprise (B2B)</h2>
+  <p class="lead">Layanan untuk perusahaan, ISP, dan institusi dengan kebutuhan kapasitas besar dan SLA.</p>
+  <div class="grid">
+
+    <div class="card">
+      <span class="seg">Enterprise</span>
+      <h3>Biznet Dedicated Internet</h3>
+      <p>Internet untuk perusahaan besar yang butuh kapasitas dan stabilitas tinggi. Termasuk akses BRT dan koneksi langsung ke GlobalPOP Singapura.</p>
+      <div class="chips"><span class="chip">1:1</span><span class="chip">SLA 99,8%</span><span class="chip">IP /32 Static</span><span class="chip">Simetris</span></div>
+      <ul><li>1 IP public static /32, tambahan IP tersedia</li><li>Monitoring MRTG realtime</li><li>Gratis web hosting Linux 20 GB</li><li>Premiere Care 24x7 (opsional, berbayar)</li></ul>
+      <div class="price">Mulai <b>Rp 6.000.000</b> &middot; Post paid &middot; 80 Mbps - 10 Gbps</div>
+    </div>
+
+    <div class="card">
+      <span class="seg">Enterprise &middot; Institusi</span>
+      <h3>EducationNET &amp; HealthNET</h3>
+      <p>Dedicated Internet dengan harga khusus untuk sekolah, kampus, dan rumah sakit, ditambah Biznet Hotspot gratis.</p>
+      <div class="chips"><span class="chip">Harga khusus</span><span class="chip">Hotspot 100 Mbps</span></div>
+      <ul><li>Hotspot gratis hingga 3 access point</li><li>Tanpa investasi dan pengelolaan AP sendiri</li></ul>
+      <div class="price">Harga khusus institusi pendidikan dan kesehatan</div>
+    </div>
+
+    <div class="card">
+      <span class="seg">Enterprise &middot; Event</span>
+      <h3>Bandwidth on Demand</h3>
+      <p>Internet sesuai pemakaian, dihitung harian atau mingguan. Cocok untuk turnamen e-sport, rapat dengan video conference, dan festival.</p>
+      <div class="chips"><span class="chip">Prepaid</span><span class="chip">1:1</span><span class="chip">No SLA</span></div>
+      <ul><li>Upload dan download simetris</li><li>IP static public, MRTG, BRT</li><li>Engineer on-site (opsional)</li></ul>
+      <div class="price">60 Mbps - 10 Gbps &middot; Prepaid</div>
+    </div>
+
+    <div class="card">
+      <span class="seg">Enterprise &middot; Carrier</span>
+      <h3>Global Transit</h3>
+      <p>Koneksi internet berkecepatan tinggi ke jaringan utama dan Internet Exchange, untuk rute tercepat ke server tujuan.</p>
+      <div class="chips"><span class="chip">SLA 99,8%</span><span class="chip">ASN 17451</span><span class="chip">Tier-1</span></div>
+      <ul><li>Latency Jakarta - Singapura 11-12 ms</li><li>Kabel laut redundan</li><li>Syarat: AS Number, IP, Order Form, BGP Form</li></ul>
+      <div class="price">Target: ISP dan Telco &middot; Post paid</div>
+    </div>
+
+    <div class="card">
+      <span class="seg">Enterprise &middot; Konektivitas</span>
+      <h3>Biznet Datacomm</h3>
+      <p>Transmisi data berbasis Ethernet untuk menghubungkan kantor pusat, cabang, dan data center.</p>
+      <div class="chips"><span class="chip">Simetris</span><span class="chip">1 Mbps - 10 Gbps</span><span class="chip">SLA 99,8%</span></div>
+      <ul><li><b>InnerCity</b> dalam satu kota</li><li><b>InterCity</b> antar kota dan pulau</li><li><b>GlobalWAN</b> antar negara</li></ul>
+      <div class="price">Post paid &middot; Kabel Cat-5E (&lt;100 Mbps), Cat-6 / fiber (&gt;100 Mbps)</div>
+    </div>
+
+    <div class="card">
+      <span class="seg">Enterprise &middot; Infrastruktur</span>
+      <h3>Biznet Dark Fiber</h3>
+      <p>Solusi one stop untuk jaringan fiber optic milik pelanggan. Biznet mendesain, membangun, dan mengelola seluruh jaringan.</p>
+      <div class="chips"><span class="chip">Ethernet 1/10/100 Gbps</span><span class="chip">CWDM / DWDM</span><span class="chip">ESCON / FICON</span></div>
+      <ul><li>Terhubung ke gedung, exchange, teleport, ISP, dan NAP</li><li>Pelanggan memakai perangkat sendiri</li></ul>
+      <div class="price">Post paid</div>
+    </div>
+
+    <div class="card">
+      <span class="seg">Enterprise &middot; Hospitality</span>
+      <h3>Biznet Hospitality</h3>
+      <p>Internet dan TV kabel terintegrasi untuk hotel, asrama, service apartment, dan rumah sakit.</p>
+      <div class="chips"><span class="chip">Min. 50 TV</span><span class="chip">8 Mbps per TV</span><span class="chip">Kontrak 36 bln</span></div>
+      <ul><li>Contoh: 50 TV = 400 Mbps (1:1)</li><li>Bisa dipilih STB atau IPTV</li><li>Belum termasuk PPN 12%</li></ul>
+      <div class="price"><b>Rp 270.000</b> STB / bulan &middot; <b>Rp 325.000</b> IPTV / bulan</div>
+    </div>
+
+    <div class="card">
+      <span class="seg">Enterprise &middot; Peering</span>
+      <h3>Biznet Internet Exchange (BIX)</h3>
+      <p>Interkoneksi langsung antara penyedia telekomunikasi dan penyedia konten, dengan ASN AS38060.</p>
+      <div class="chips"><span class="chip">AS38060</span><span class="chip">Paket 1 tahun</span><span class="chip">Maks 10 Gbps / ASN</span></div>
+      <ul><li>Node: Jakarta, Semarang, Yogyakarta, Surabaya, Malang, Palembang, Bali</li><li>Utilisasi port maksimal 80%</li></ul>
+      <div class="price">Target: Content Provider, Telco &amp; ISP, Keuangan, Pemerintah, Pendidikan</div>
+    </div>
+
+  </div>
+
+  <h3 style="margin-top:28px">Statistik BIX</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Indikator</th><th class="num">Nilai</th></tr>
+      <tr><td>IXP aktif di Indonesia</td><td class="num">58</td></tr>
+      <tr><td>ASN terhubung di semua node</td><td class="num">233</td></tr>
+      <tr><td>Puncak trafik</td><td class="num">626 Gbps</td></tr>
+      <tr><td>Anggota BIX di Jakarta</td><td class="num">202</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="ukm">
+  <h2>Produk UKM (Small Medium Business)</h2>
+  <p class="lead">Broadband untuk usaha kecil dan menengah, dengan pembayaran prepaid berbasis kuota.</p>
+  <div class="grid">
+    <div class="card">
+      <span class="seg">UKM</span>
+      <h3>Biznet Metronet</h3>
+      <p>Broadband super cepat di jaringan Biznet Fiber, dengan pilihan paket 100 hingga 900 Mbps.</p>
+      <div class="chips"><span class="chip">100 - 900 Mbps</span><span class="chip">Prepaid</span><span class="chip">Shared</span></div>
+      <ul><li>Masa aktif 30 hari, masa tenggang 45 hari</li><li>Setelah kuota habis, kecepatan turun ke batas tertentu</li><li>Kontrak sewa perangkat 24 bulan, penalti Rp 4.400.000</li></ul>
+      <div class="price">Perangkat <b>Rp 1.100.000</b> &middot; Setup <b>Rp 1.250.000</b></div>
+    </div>
+    <div class="card">
+      <span class="seg">UKM &middot; Add-on</span>
+      <h3>Managed WiFi (Metronet)</h3>
+      <p>Hotspot WiFi dengan landing page yang bisa disesuaikan untuk restoran, kafe, dan club.</p>
+      <div class="chips"><span class="chip">Jabodetabek, Surabaya, Bali</span><span class="chip">Min. Metronet 2D</span></div>
+      <ul><li>Portal login, iklan, dan pengelolaan data pengguna</li><li>Instalasi oleh engineer bersertifikat</li></ul>
+      <div class="price">Bayar di muka 12 bulan &middot; Kontrak 16 bulan</div>
+    </div>
+    <div class="card">
+      <span class="seg">UKM &middot; HORECA</span>
+      <h3>Full Managed WiFi</h3>
+      <p>WiFi untuk hotel, restoran, dan kafe, dikelola penuh oleh Biznet sehingga pemilik usaha bisa fokus ke bisnis.</p>
+      <div class="chips"><span class="chip">Management Controller</span><span class="chip">Landing page</span></div>
+      <ul><li>Restoran dan kafe: one-time fee</li><li>Hotel: monthly fee, kontrak minimal 36 bulan</li></ul>
+      <div class="price">Kafe 10-50 kursi <b>Rp 16.500.000</b> &middot; 51-100 kursi <b>Rp 23.000.000</b></div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:28px">Top-up kuota Metronet (Jawa, Bali, Batam, Bangka, Sumsel, Lampung)</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Masa berlaku</th><th class="num">Kuota</th><th class="num">Harga</th></tr>
+      <tr><td>1 hari</td><td class="num">500 GB</td><td class="num">Rp 75.000</td></tr>
+      <tr><td>3 hari</td><td class="num">1.000 GB</td><td class="num">Rp 150.000</td></tr>
+      <tr><td>7 hari</td><td class="num">1.500 GB</td><td class="num">Rp 225.000</td></tr>
+      <tr><td>30 hari</td><td class="num">3.000 GB</td><td class="num">Rp 450.000</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin-top:24px">Top-up kuota per wilayah (30 hari)</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Wilayah</th><th class="num">Kuota 30 hari</th><th class="num">Harga</th></tr>
+      <tr><td>Sumatra, NTB, Kalimantan</td><td class="num">3.000 GB</td><td class="num">Rp 550.000</td></tr>
+      <tr><td>Sulawesi</td><td class="num">3.000 GB</td><td class="num">Rp 1.000.000</td></tr>
+      <tr><td>Nusa Tenggara Timur</td><td class="num">3.000 GB</td><td class="num">Rp 1.400.000</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin-top:24px">Contoh hotel 50 kamar (Managed WiFi)</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Komponen</th><th class="num">Nilai</th></tr>
+      <tr><td>Investasi jaringan WiFi (sekali)</td><td class="num">Rp 97.500.000</td></tr>
+      <tr><td>Managed WiFi per bulan</td><td class="num">Rp 4.785.714</td></tr>
+      <tr><td>Internet Hospitality Managed WiFi 50 Mbps per bulan</td><td class="num">Rp 8.875.000</td></tr>
+      <tr><td><b>Total bulanan</b></td><td class="num"><b>Rp 13.660.714</b></td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="residensial">
+  <h2>Produk Residensial (B2C)</h2>
+  <p class="lead">Internet rumah dan apartemen, TV interaktif 4K, dan WiFi mesh, dengan pembayaran prepaid.</p>
+  <div class="grid">
+    <div class="card">
+      <span class="seg">Residensial</span>
+      <h3>Biznet Home Internet</h3>
+      <p>Internet WiFi ultra cepat untuk rumah dan apartemen, download maupun upload.</p>
+      <div class="chips"><span class="chip">Hingga 500 Mbps</span><span class="chip">Modem WiFi</span></div>
+      <ul><li>Gratis Biznet WiFi dan Biznet Video</li></ul>
+      <div class="price">Mulai <b>Rp 150.000</b> / bulan</div>
+    </div>
+    <div class="card">
+      <span class="seg">Residensial &middot; Gamer</span>
+      <h3>Biznet Home Gamers</h3>
+      <p>Seperti Home Internet, tetapi dengan IP public untuk bermain game online.</p>
+      <div class="chips"><span class="chip">Hingga 500 Mbps</span><span class="chip">IP Public</span></div>
+      <div class="price">Mulai <b>Rp 700.000</b> / bulan</div>
+    </div>
+    <div class="card">
+      <span class="seg">Residensial &middot; Bundling</span>
+      <h3>Biznet Home + IPTV</h3>
+      <p>Internet dan TV interaktif dalam satu paket, untuk streaming 4K.</p>
+      <div class="chips"><span class="chip">Mulai 150 Mbps</span><span class="chip">46+ channel</span></div>
+      <ul><li>Hanya di area The New Biznet Fiber</li><li>Kontrak 24 bulan rumah, 6 bulan apartemen</li></ul>
+      <div class="price">Mulai <b>Rp 225.000</b> / bulan</div>
+    </div>
+    <div class="card">
+      <span class="seg">Residensial &middot; TV</span>
+      <h3>Biznet IPTV</h3>
+      <p>TV interaktif 4K Ultra HD dengan live TV, catch up, VOD, dan recording.</p>
+      <div class="chips"><span class="chip">4K UHD</span><span class="chip">Tanpa kontrak</span><span class="chip">Hingga 4 STB</span></div>
+      <ul><li>Gratis semua channel 3 bulan pertama</li><li>STB garansi 1 tahun</li><li>Bayar dengan GoPay QR</li></ul>
+      <div class="price">Rp 225.000 / bulan &middot; STB <b>Rp 750.000</b></div>
+    </div>
+    <div class="card">
+      <span class="seg">Residensial &middot; Add-on</span>
+      <h3>Smart Internet WiFi</h3>
+      <p>Mesh WiFi TP-Link Deco M4 untuk menjangkau seluruh ruangan di rumah.</p>
+      <div class="chips"><span class="chip">800 Mbps WiFi</span><span class="chip">100+ perangkat</span></div>
+      <ul><li>Bandwidth management, parental controls</li><li>Antivirus built-in dan QoS</li></ul>
+      <div class="price">Add-on untuk paket Home</div>
+    </div>
+    <div class="card">
+      <span class="seg">Publik</span>
+      <h3>Biznet WiFi &amp; Hotspot</h3>
+      <p>WiFi gratis hingga 100 Mbps untuk pelanggan Home dan Metronet, dengan login otomatis.</p>
+      <div class="chips"><span class="chip">Login otomatis</span></div>
+      <ul><li>Lokasi: mal, hotel, kafe, sekolah, kampus, taman, perkantoran, dan arena</li></ul>
+      <div class="price">biznetwifi.com &middot; biznethotspot.com/id</div>
+    </div>
+  </div>
+</section>
+
+<section id="datacenter">
+  <h2>Biznet Data Center</h2>
+  <p class="lead">Pusat data dan stasiun pendarat kabel bawah laut sejak 2001, untuk menyimpan dan mengoperasikan perangkat pelanggan.</p>
+
+  <h3>Lokasi</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Kota</th><th>Lokasi</th><th>Tier</th><th>Status</th></tr>
+      <tr><td>Jakarta</td><td>Sudirman MidPlaza</td><td>Tier II (sejak 2001)</td><td>Aktif</td></tr>
+      <tr><td>Bogor</td><td>Technovillage Cimanggis</td><td>Tier III</td><td>Aktif</td></tr>
+      <tr><td>Bali</td><td>Jimbaran</td><td>Tier II</td><td>Aktif (Jimbaran 2 dalam konstruksi)</td></tr>
+      <tr><td>Surabaya</td><td>Technocenter</td><td>-</td><td>Aktif</td></tr>
+      <tr><td>Semarang</td><td>Technocenter</td><td>-</td><td>Aktif</td></tr>
+      <tr><td>Yogyakarta</td><td>Technocenter Jefferson</td><td>-</td><td>Aktif (cek ulang)</td></tr>
+      <tr><td>Medan</td><td>Technocenter</td><td>-</td><td>Dalam konstruksi</td></tr>
+    </table>
+  </div>
+
+  <div class="grid" style="margin-top:22px">
+    <div class="card">
+      <span class="seg">Colocation</span>
+      <h3>Closed Rack</h3>
+      <p>Rack fisik 42U (600 x 1200 mm), siap cold aisle containment.</p>
+    </div>
+    <div class="card">
+      <span class="seg">Colocation</span>
+      <h3>Secure Suite</h3>
+      <p>Kandang aman minimal 12,6 m&sup2; dengan sistem keamanan privat.</p>
+    </div>
+    <div class="card">
+      <span class="seg">Colocation</span>
+      <h3>Custom Space</h3>
+      <p>500 m&sup2; hingga 1.000 m&sup2;, dibangun sesuai kebutuhan bisnis pelanggan.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:28px">Infrastruktur</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Sistem</th><th>Spesifikasi</th></tr>
+      <tr><td>Daya</td><td>Dua sumber PLN, UPS 2 x 375 kVA (2N), 3 generator 2.250 kVA (N+1), cadangan solar 3 hari</td></tr>
+      <tr><td>Pendingin</td><td>CRAC 100 kW per unit, N+1, 23&deg;C &plusmn; 2&deg;C, kelembapan 50% &plusmn; 10%</td></tr>
+      <tr><td>Pemadam</td><td>Pre-action, deteksi asap HSSD, Novec 1230 (opsional)</td></tr>
+      <tr><td>Keamanan</td><td>Pagar perimeter, CCTV di semua akses, RFID, pemantauan 24x7x365</td></tr>
+      <tr><td>Konektivitas</td><td>Koneksi redundan ke Biznet Fiber dan penyedia lain di Meet-Me-Room</td></tr>
+    </table>
+  </div>
+
+  <div class="two" style="margin-top:22px">
+    <div class="box">
+      <h3>Technovillage Cimanggis</h3>
+      <ul>
+        <li>35 km selatan Jakarta, sekitar 45 menit perjalanan</li>
+        <li>Lahan 100.000 m&sup2;, konsep Campus Block</li>
+        <li>Tier III Data Center, Grade A Office, backup facility</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Sertifikasi</h3>
+      <ul>
+        <li>Uptime Tier III Facility dan Design</li>
+        <li>TVRA, PCI-DSS, ISO 27001</li>
+        <li>ISO 9001, ISO 45001, ISO 14001</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="etika">
+  <h2>Panduan Etika Tim Sales &amp; Support</h2>
+  <p class="lead">Aturan dasar saat menjelaskan produk ke pelanggan.</p>
+  <div class="two">
+    <div class="box do">
+      <h3>Do</h3>
+      <ul>
+        <li>Menguasai dan memperbarui materi produk Biznet</li>
+        <li>Menyampaikan informasi yang benar dan bersifat umum</li>
+        <li>Membedakan produk bisnis dan retail, karena kemampuannya berbeda</li>
+        <li>Merekomendasikan perangkat sesuai ketentuan perusahaan</li>
+      </ul>
+    </div>
+    <div class="box dont">
+      <h3>Don't</h3>
+      <ul>
+        <li>Menyampaikan informasi di luar kapasitas departemen</li>
+        <li>Membocorkan informasi yang bersifat rahasia</li>
+        <li>Memberi saran perangkat di luar yang diatur Biznet</li>
+        <li>Menjual alat pendukung WiFi di luar ketentuan perusahaan</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Kontak:</b> biznetnetworks.com &middot; biznethome.net &middot; biznetdatacenter.com &middot; bix.id<br>
+    Training Department: training@biznetnetworks.com (Ext. 1761-1762) &middot; Carrier: carrier@biznetnetworks.com<br><br>
+    Dokumen internal dan rahasia. Harga dan syarat bersifat indikatif dan dapat berubah. Harga belum termasuk PPN 12%.
+  </div>
+</footer>
+
+</body>
+</html>
